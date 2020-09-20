@@ -48,12 +48,14 @@ coinReturn vending(int money, int price)
 int main()
 {
 	int money,price;
+	printf("Input your money : ");
 	scanf_s("%d", &money);
+	printf("Input your price : ");
 	scanf_s("%d", &price);
 	if (money > price && money >= 0 && price >= 0)
 	{
 		coinReturn r = vending(money, price);
-		printf("\nreturn coin\none = %d two = %d five = %d ten = %d", r.a, r.b, r.c, r.d);
+		printf("\nreturn coin\none = %d two = %d five = %d ten = %d\n", r.a, r.b, r.c, r.d);
 	}
 	else if (money == price && money >= 0 && price >= 0)
 	{
